@@ -1,2 +1,4 @@
 @import "tailwindcss";
-@import "@jamsr-ui/theme/styles.css"
+@import "@jamsr-ui/theme/styles.css";
+
+@source "@jamsr-ui/react";
