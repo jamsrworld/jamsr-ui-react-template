@@ -1,4 +1,4 @@
-import { Button, Editor, Link, Menu, MenuItem, Text } from "@jamsr-ui/react";
+import { Button, Link, Menu, MenuItem, Text } from "@jamsr-ui/react";
 import "./App.css";
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
         <MenuItem>Menu Item1</MenuItem>
       </Menu>
       <div className="text-foreground-secondary">Hello world!</div>
-      <Editor />
     </div>
   );
 }
