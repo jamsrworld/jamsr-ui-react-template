@@ -1,23 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Button, Link, Menu, MenuItem, Text } from "@jamsr-ui/react";
 import "./App.css";
-import { Avatar, Button } from "@jamsr-ui/react";
 
 function App() {
-  const colors: AvatarProps["color"][] = [
-    "default",
-    "primary",
-    "secondary",
-    "success",
-    "warning",
-    "danger",
-  ];
   return (
-    <div className="flex gap-4">
-      {colors.map((color) => (
-        <AvatarUsage key={color} color={color} isBordered />
-      ))}
+    <div className="flex flex-col justify-center items-center py-24 gap-4">
+      <Text as="h1" variant="h1">
+        Hello world!
+      </Text>
+      <Button>Click Me!</Button>
+      <Link href="#">Hii There</Link>
+      <Menu trigger={<Button>Trigger</Button>}>
+        <MenuItem>Menu Item1</MenuItem>
+      </Menu>
+      <div className="text-foreground-secondary">Hello world!</div>
     </div>
   );
 }
